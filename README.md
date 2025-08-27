@@ -18,16 +18,16 @@ i18n context for translations (English & Albanian included)
 Infinite scroll for loading more results
 
 🛠️ Getting Started
-1. Clone the repo
+# 1. Clone the repo
 git clone https://github.com/your-username/guitar-shop.git
 cd guitar-shop
 
-2. Install dependencies
+# 2. Install dependencies
 npm install
-# or
+ or
 yarn install
 
-3. Configure environment
+# 3. Configure environment
 
 Create a .env file in the root with your GraphQL endpoint:
 
@@ -41,9 +41,9 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-4. Run the app
+# 4. Run the app
 npm run dev
-# or
+or
 yarn dev
 
 
