@@ -1,12 +1,51 @@
-# React + Vite
+🎸 Online Guitar Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application for browsing guitar brands, models, and details.
+Supports multi-language translations, search, filters, sorting, and infinite scrolling.
 
-Currently, two official plugins are available:
+🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 18 + Vite (or CRA, depending on your setup)
 
-## Expanding the ESLint configuration
+React Router for routing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Apollo Client for GraphQL queries
+
+TailwindCSS for styling
+
+i18n context for translations (English & Albanian included)
+
+Infinite scroll for loading more results
+
+🛠️ Getting Started
+1. Clone the repo
+git clone https://github.com/your-username/guitar-shop.git
+cd guitar-shop
+
+2. Install dependencies
+npm install
+# or
+yarn install
+
+3. Configure environment
+
+Create a .env file in the root with your GraphQL endpoint:
+
+VITE_GRAPHQL_ENDPOINT=https://your-api-url/graphql
+
+
+Inside src/graphql/apolloClient.js (or wherever you configure Apollo), make sure it uses:
+
+const client = new ApolloClient({
+  uri: import.meta.env.VITE_GRAPHQL_ENDPOINT,
+  cache: new InMemoryCache(),
+});
+
+4. Run the app
+npm run dev
+# or
+yarn dev
+
+
+App will be available at:
+👉 http://localhost:5173
