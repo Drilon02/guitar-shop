@@ -19,7 +19,7 @@ Infinite scroll for loading more results
 
 🛠️ Getting Started
 # 1. Clone the repo
-git clone https://github.com/your-username/guitar-shop.git
+git clone https://github.com/Drilon02/guitar-shop.git
 cd guitar-shop
 
 # 2. Install dependencies
@@ -31,10 +31,10 @@ yarn install
 
 Create a .env file in the root with your GraphQL endpoint:
 
-VITE_GRAPHQL_ENDPOINT=https://your-api-url/graphql
+VITE_GRAPHQL_ENDPOINT=https://graphql-api-brown.vercel.app/api/graphql
 
 
-Inside src/graphql/apolloClient.js (or wherever you configure Apollo), make sure it uses:
+Inside src/graphql/apolloClient.js make sure it uses:
 
 const client = new ApolloClient({
   uri: import.meta.env.VITE_GRAPHQL_ENDPOINT,
